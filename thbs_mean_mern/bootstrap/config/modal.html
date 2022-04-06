@@ -1,0 +1,64 @@
+<html lang="en">
+
+<head>
+    <style>
+        @media (min-width: 768px) {
+            .gradient-form {
+                height: 100vh !important;
+            }
+        }
+
+        @media (min-width: 769px) {
+            .gradient-custom-2 {
+                border-top-right-radius: .3rem;
+                border-bottom-right-radius: .3rem;
+            }
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal</title>
+
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</head>
+
+<body>
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Login
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <p>Please login to your account</p>
+                    <div class="form-outline mb-4">
+                        <input type="email" id="form2Example11" class="form-control"
+                            placeholder="Phone number or email address" />
+                        <label class="form-label" for="form2Example11">Username</label>
+                    </div>
+                    <div class="form-outline mb-4">
+                        <input type="password" id="form2Example22" class="form-control" />
+                        <label class="form-label" for="form2Example22">Password</label>
+                    </div>
+                    <div class="text-center pt-1 mb-5 pb-1">
+                        <button class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3" type="button">Log
+                            in</button>
+                        <a class="text-muted" href="#!">Forgot password?</a>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-center pb-4">
+                        <p class="mb-0 me-2">Don't have an account?</p>
+                        <button type="button" class="btn btn-outline-danger">Create new</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
